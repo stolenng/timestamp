@@ -4,8 +4,8 @@ var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
 var Timestamp = new Schema({
-	unix: Number,
-	natural: String,
+	unix: {type: Number, default:null},
+	natural: {type: String, default:null},
 	_id:{ select:false }
 });
 
